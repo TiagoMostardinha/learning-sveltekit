@@ -1,8 +1,6 @@
 <script lang="ts">
-    import Title from "$lib/components/Title.svelte";
-
 </script>
-<Title title="SvelteKit Gaming Reviews" />
+
 <div class="about">
     <h2>About Us</h2>
     <p>
