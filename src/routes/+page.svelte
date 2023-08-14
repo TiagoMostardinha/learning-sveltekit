@@ -1,6 +1,8 @@
 <script lang="ts">
+    import Title from "$lib/components/Title.svelte";
 </script>
 
+<Title />
 <div class="index">
     <h2>Some Title</h2>
     <p>
