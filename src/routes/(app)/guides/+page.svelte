@@ -1,25 +1,29 @@
 <script lang="ts">
-
+    export let data;
+    const { guides } = data;
 </script>
 
 <div class="guides">
     <ul>
-        <li><a href="/">guide 1</a></li>
-        <li><a href="/">guide 2</a></li>
+        {#each guides as guide}
+            <li>
+                <a href="/">{guide.title}</a>
+            </li>
+        {/each}
     </ul>
 </div>
 
 <style>
-    .guides{
-        margin-top: 20px  ;
+    .guides {
+        margin-top: 20px;
     }
-    ul{
+    ul {
         list-style-type: none;
     }
-    a{
+    a {
         display: inline-block;
         margin-top: 10px;
         padding: 10px;
-        border:1px dotted rgba(255,255,255,0.2);
+        border: 1px dotted rgba(255, 255, 255, 0.2);
     }
 </style>
